@@ -76,3 +76,4 @@ const add2 = (num1, num2) => {
   }
 };
 console.log(add2("hej", 12));
+console.log(add(45, 17));
