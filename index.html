@@ -8,17 +8,17 @@
   </head>
   <body>
     <!--Uppgift 1 --------------------------------------------------------------------------------------------
-        Placeringen av script taggen påverkar hur ett script interagerar
-        med övrig html och css kod. Om man kör eller deklararera script innan all html eller css
-        har hunnit laddats, d.v.s. uppifrån och ner, så kommer inte scriptet att fungerar eller inte.
+        Placeringen av script taggen påverkar hur ett script interagerar med övrig html och css kod. 
+        Om man kör eller deklararera script innan all html eller css har hunnit laddats, 
+        d.v.s. uppifrån och ner, så kommer scriptet ha svårt att hitta eller påverka det som inte finns.
         Om man till exempel skriver script taggen i början av body och sedan ska all html och css kod komma
         efter så kan scriptet inte påverka den del av koden som kommer efter. Man kan använda sig av 'defer' 
-        för att den ska laddas efter html/css eller lägga den sist i body för att den ska köras 
+        för att den ska laddas parallallet med html/css eller lägga den sist i body för att den ska köras 
         efter att övriga sidan laddat klart.
 
         Defer är en bool som kollar hur ett script ska exekveras, om man skriver defer är den true,
-        om den inte deklareras så är den false. Om den är true kommer scriptet att laddas efter
-        att resten av dokumentet har tolkats(men allt på sidan har kanske inte laddat klart än).-->
+        om den inte deklareras så är den false. Om den är true kommer scriptet att laddas parallellt 
+        med html/css, men väntar med exekvering medans resten av dokumentet tolkas.-->
     <script src="script.js"></script>
   </body>
 </html>
